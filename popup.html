@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<link rel="stylesheet" type="text/css" href="style/style.css" />
+<link rel="stylesheet" type="text/css" href="style/codemirror.css">
+<link rel="stylesheet" type="text/css" href="style/docs.css">
+<style type="text/css">.CodeMirror {border-top: 1px solid black; border-bottom: 1px solid black;}</style>
+
+<script type="text/javascript" src="lib/devcloud.js"></script>
+<script type="text/javascript" src="lib/popup.js"></script>
+<script type="text/javascript" src="lib/jquery.js"></script>
+<script type="text/javascript" src="lib/plusone.js"></script>
+<script type="text/javascript" src="lib/codemirror.js"></script>
+<script type="text/javascript" src="lib/xml.js"></script>
+<script type="text/javascript" src="lib/javascript.js"></script>
+<script type="text/javascript" src="lib/css.js"></script>
+<script type="text/javascript" src="lib/clike.js"></script>
+<script type="text/javascript" src="lib/php.js"></script>
+
+<script type="text/javascript">
+$(document).ready(function() {
+	refreshPopupContent();  
+});
+function runSpup() {
+	alert ('fdfads');
+	return false;
+}
+
+</script>
+</head>
+<body>
+	<div id="mini_bar_header">
+		<img src="images/logo.png" />
+		<div id="close-button" onclick="window.close()" title="Close" ></div>
+		<div id="settings-button" title="Settings"></div>
+		<div id="logout-button" onclick="signout()" title="Logout"></div>
+	</div>
+	
+	<div class="mini_bar_content">
+		<div id="mini_bar_welcome">
+			<table class="nothing-to-see">
+				<tr>
+					<td>
+						<form name="mainText" >
+							<textarea rows="10" cols="50" id="code" name="code">&lt;?php
+</textarea>
+					      <input type="button" value="Spup! (crtl+s)" name="mySpup" onClick="runSpup()"/>
+					      <input type="button" value="Run! (crtl+r)" name="myRun" onClick="runSpup()"/>
+						</form>
+					</td>
+				</tr>
+			</table>
+			<hr />
+			<div class="share-bar">
+				Like this extension? Why not share it with your friends!
+				<div style="float: right">
+					<div style="float: right; margin: 0 3px;"><g:plusone count="false" size="small" href="http://phpcloud.com"></g:plusone></div>
+					<a href="http://twitter.com/home?status=Spuping with http://phpcloud.com" target="_blank" style="background: url('images/twitter.png') top right no-repeat; width: 16px; height: 16px; display: block; float: right; margin: 0 3px;" ></a>
+					<a href="http://www.facebook.com/share.php?u=http://phpcloud.com" target="_blank" style="background: url('images/facebook.png') top right no-repeat; width: 16px; height: 16px; display: block; float: right; margin: 0 3px;" ></a>
+				</div>
+			</div>
+		</div>
+
+		<div id="mini_bar_login">
+			<div id="login-form-message" style="display: none;">
+				<div class="login-form-message-error">
+					Oops, you have entered an incorrect user name or password.
+				</div>
+				Try again:
+			</div>
+			<form id="loginform" enctype="application/x-www-form-urlencoded" action="http://devpaas.zend.com" onsubmit="return login(this);">
+				<table>
+					<tr>
+						<td colspan=2 class="login-form-title">Enter your Zend Developer Cloud credentials:</td>
+					</tr>
+					<tr>
+						<td class="login-form-title"><label for="username" class="required">User Name:</label></td>
+						<td>
+							<input type="text" name="username" id="username" value="" />
+						</td>
+					</tr>
+					<tr>
+						<td class="login-form-title"><label for="password" class="required">Password:</label></td>
+						<td>
+							<input type="password" name="password" id="password" value="" />
+						</td>
+					</tr>
+					<tr>
+						<td class="login-form-title">&nbsp;</td>
+						<td><a href="http://www.zend.com/en/user/lost" target="_blank" class="forgot-pass">Forgot your password or user name ?</a></td>
+					</tr>
+					<tr>
+						<td class="login-form-title">&nbsp;</td>
+						<td><a href="http://www.zend.com/en/user/lost" target="_blank" class="forgot-pass">Don't have an account?</a></td>
+					</tr>
+					<tr>
+						<td class="login-form-title">&nbsp;</td>
+						<td>
+							<input type="submit" name="start-now" id="start-now" value="Start Now" />
+							<input type="button" value="Start Later" onclick="window.close()" />
+						</td>
+					</tr>
+
+				</table>
+			</form>
+		</div>
+	</div>
+</body>
+</html>

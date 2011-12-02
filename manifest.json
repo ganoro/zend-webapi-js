@@ -1,0 +1,14 @@
+{
+  "name": "Spup",
+  "description": "Write Spups to share php snippets",
+  "version": "0.0.1",
+  "icons": { "16": "images/code-share.png" },	
+  "permissions": ["tabs", "notifications", "cookies", "http://*/*", "*://*.devpaas.zend.com/*", "*://*.projectx.zend.com/*", "*://*.my.phpcloud.com/*" ],
+  "browser_action": {
+    "default_icon": "images/code-share.png", 
+    "default_title": "Spup",      
+    "default_popup": "popup.html"        
+  },
+  "background_page": "background.html",
+  "options_page": "options.html"
+}

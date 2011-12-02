@@ -1,0 +1,250 @@
+p {
+	line-height: 1.4;
+	margin-bottom: 12px
+}
+
+.mini-window-icons {
+	margin: 4px;
+}
+
+.float-left {
+	float: left;
+}
+
+.float-right {
+	float: right;
+}
+
+.clear-both {
+	clear: both;
+}
+
+.no-wrap {
+	white-space: nowrap;
+}
+
+.bottom-separator {
+	border-bottom:1px solid grey;
+}
+
+.black_overlay {
+	display: block;
+	position: absolute;
+	top: 0%;
+	left: 0%;
+	width: 100%;
+	height: 100%;
+	background-color: black;
+	z-index: 1001;
+	-moz-opacity: 0.8;
+	opacity: .80;
+	filter: alpha(opacity =   80);
+}
+
+#wrapper {
+	position: absolute;
+	z-index: 1002;
+	top: 15%;
+	left: 30%;
+	width: 50%;
+	height: 50%;
+	margin: 75px auto;
+}
+
+.sliderbutton {
+	float: left;
+	width: 32px;
+	padding-top: 134px;
+	z-index: 1002;
+}
+
+.sliderbutton img {
+	cursor: pointer;
+}
+
+.sliderbutton img:hover {
+	z-index: 1002;
+	background: #666
+}
+
+#slideshow {
+	float: left;
+	margin: 0;
+	padding: 0;
+	width: 500px;
+	height: 300px;
+	border: 2px solid #fff;
+	z-index: 1002;
+	background: #fff
+}
+
+#slides {
+	margin: 0;
+	padding: 0;
+	position: relative;
+	width: 500px;
+	height: 300px;
+	list-style: none;
+	z-index: 1002;
+	overflow: auto
+}
+
+#slides li {
+	width: 500px;
+	height: 300px
+}
+
+.pagination {
+	z-index: 1002;
+	float: left;
+	list-style: none;
+	height: 25px;
+	margin: 15px 0 0 32px
+}
+
+.pagination li {
+	z-index: 1002;
+	float: left;
+	cursor: pointer;
+	padding: 5px 8px;
+	background: #666;
+	border: 1px solid #999;
+	margin: 0 4px 0 0;
+	text-align: center;
+	color: #222
+}
+
+.pagination li:hover {
+	z-index: 1002;
+	background: #777;
+	border: 1px solid #bbb;
+	color: #000
+}
+
+li.current {
+	z-index: 1002;
+	border: 1px solid #ccc;
+	background: #888
+}
+
+li.zend_content {
+	z-index: 1002;
+	width: 464px;
+	height: 270px;
+	padding: 15px 18px 15px 18px;
+	background: #fff;
+	position: absolute;
+	opacity: 1;
+}
+
+.zend_content h1 {
+	z-index: 1002;
+	font: 22px Georgia, Verdana;
+	margin-bottom: 15px;
+	color: #036
+}
+
+/* GUI CODE */
+
+#mini_bar_header {
+	background: #ceeefe;
+	width: 350px;
+	height: 22px;
+	padding-top: 5px;
+	padding-left: 10px;
+}
+
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+}
+
+#mini_bar_welcome {
+	display: none;
+	width: 600px;
+}
+
+.forgot-pass {
+	font-size: 12px;
+}
+
+.login-form-title {
+	width: 80px;
+}
+
+#login-form-welcome-title {
+	margin: 10px 0;
+}
+
+#mini_bar_login {
+	float: left;
+	margin: 5px 0 0 10px;
+}
+
+#loginform input[type="text"],
+#loginform input[type="password"] {
+	width: 200px;
+}
+
+.login-form-message-error {
+	color: #FF0000;
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+
+#close-button {
+	background: url('../images/close.png') top right no-repeat;
+	width: 16px;
+	height: 15px;
+	float: right;
+	margin: 1px 5px 0 0;
+	cursor: pointer;
+}
+
+#close-button:hover {
+	background: url('../images/close-over.png') top right no-repeat;
+}
+
+#settings-button {
+	background: url('../images/settings.png') top right no-repeat;
+	width: 18px;
+	height: 17px;
+	float: right;
+	margin-right: 5px;
+}
+
+#logout-button {
+	background: url('../images/logout.png') top right no-repeat;
+	width: 18px;
+	height: 17px;
+	float: right;
+	margin-right: 5px;
+}
+
+#settings-button, #logout-button {
+	display: none;
+	cursor: pointer;
+}
+
+.share-bar {
+	font-size: 12px;
+}
+
+.nothing-to-see {
+	font-size: 12px;
+	padding: 10px;
+	line-height: 16px;
+	width: 100%;
+}
+
+#info-icon {
+	background: url('../images/info.png') top right no-repeat;
+	width: 16px;
+	height: 16px;
+	margin-right: 10px;
+}
+
+#lock-button {
+	margin: 3px 0 0 10px !important;
+	cursor: pointer;
+}
