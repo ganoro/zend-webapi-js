@@ -9,6 +9,9 @@
 
 <script type="text/javascript" src="lib/devcloud.js"></script>
 <script type="text/javascript" src="lib/popup.js"></script>
+<script type="text/javascript" src="lib/zend-webapi.js"></script>
+<script type="text/javascript" src="lib/sha.js"></script>
+<script type="text/javascript" src="lib/sha256.js"></script>
 <script type="text/javascript" src="lib/jquery.js"></script>
 <script type="text/javascript" src="lib/plusone.js"></script>
 <script type="text/javascript" src="lib/codemirror.js"></script>
@@ -22,11 +25,6 @@
 $(document).ready(function() {
 	refreshPopupContent();  
 });
-function runSpup() {
-	alert ('fdfads');
-	return false;
-}
-
 </script>
 </head>
 <body>
@@ -45,7 +43,7 @@ function runSpup() {
 						<form name="mainText" >
 							<textarea rows="10" cols="50" id="code" name="code">&lt;?php
 </textarea>
-					      <input type="button" value="Spup! (crtl+s)" name="mySpup" onClick="runSpup()"/>
+					      <input type="button" value="Spup (crtl+s)" name="mySpup" onClick="runSpup()"/>
 					      <input type="button" value="Run! (crtl+r)" name="myRun" onClick="runSpup()"/>
 						</form>
 					</td>
